@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(./Poppins-Regular.ttf);
+}
+
+.login {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+    padding: 70px 0;
+
+    form {
+        display: block;
+        width: 90%;
+        max-width: 500px;
+        margin: auto;
+        background: #fff;
+        padding: 40px;
+        border-radius: 4px;
+        box-shadow: 0 0 4px rgba(0,0,0,.05);
+
+        @media screen and (max-width: 500px) {
+            padding: 40px 30px;
+        }
+
+        .logo {
+            display: block;
+            height: 30px;
+            margin-bottom: 25px;
+
+            @media screen and (max-width: 500px) {
+                height: 25px;
+            }
+        }
+
+        h1 {
+            display: block;
+            width: 100%;
+            line-height: 35px;
+            font-size: 25px;
+            font-weight: bolder;
+            font-family: Poppins-Regular, sans-serif;
+            color: #444;
+            text-align: left;
+
+            @media screen and (max-width: 500px) {
+                line-height: 30px;
+                font-size: 20px;
+            }
+        }
+
+        p {
+            display: block;
+            width: 100%;
+            line-height: 25px;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: Poppins-Regular, sans-serif;
+            color: #999;
+            text-align: left;
+            margin-bottom: 40px;
+
+            @media screen and (max-width: 500px) {
+                font-size: 13px;
+            }
+        }
+
+        label {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 25px;
+            font-size: 14px;
+            font-weight: normal;
+            font-family: Poppins-Regular, sans-serif;
+            color: #999;
+            text-align: left;
+
+            @media screen and (max-width: 500px) {
+                font-size: 13px;
+            }
+        }
+
+        input[type=email],
+        input[type=password],
+        input[type=text] {
+            display: block;
+            width: 100%;
+            height: 50px;
+            border: 1px solid #ddd;
+            outline: 0;
+            border-radius: 4px;
+            background: #fff;
+            padding: 0 15px;
+            font-family: Poppins-Regular, sans-serif;
+            font-weight: normal;
+            color: #444;
+            font-size: 14px;
+            text-align: left;
+            margin-top: 5px;
+            margin-bottom: 25px;
+
+            &:focus {
+                border-color: #aaa;
+            }
+
+            &[type=password] {
+                font-size: 20px;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 13px;
+            }
+        }
+
+        input[type=checkbox] {
+            display: inline-block;
+            vertical-align: middle;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+        }
+        
+        button[type=submit] {
+            display: block;
+            width: 50%;
+            height: 50px;
+            border: 1px solid #ddd;
+            outline: 0;
+            border-radius: 4px;
+            background: #fff;
+            font-family: Poppins-Regular, sans-serif;
+            font-weight: normal;
+            color: #444;
+            font-size: 14px;
+            text-align: center;
+            margin-top: 40px;
+
+            &:focus {
+                border-color: #aaa;
+            }
+
+            @media screen and (max-width: 500px) {
+                font-size: 13px;
+            }
+        }
+    }
+}
